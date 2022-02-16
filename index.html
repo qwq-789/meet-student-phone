@@ -6,33 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="bg-[#B5D6D6]">
+  <body class="bg-[#B5D6D6] font-sans">
     <header>
       <div
-        class="fixed flex h-[40px] w-screen flex-row items-center bg-[#FDFDFD]"
+        class="fixed z-40 flex h-[40px] w-screen flex-row items-center bg-[#FDFDFD] md:invisible"
       >
-        <label for="burger" class="ml-4 w-1/12"
-          ><img src="./img/burger.png"
-        /></label>
-        <p
-          class="-ml-4 w-11/12 text-center font-sans text-[12px] font-semibold"
-        >
+        <div id="bb" class="z-50 ml-4 w-1/12">
+          <img src="./img/burger.png" />
+        </div>
+        <p class="-ml-4 w-full text-center text-[12px] font-semibold">
           如何在探索中揮灑自己的力量 - 與高中生有約
         </p>
       </div>
-      <div class="w-screen translate-y-10 text-center">
+      <div
+        id="burger"
+        class="w-screen -translate-y-72 text-center duration-500 md:translate-y-0"
+      >
         <ul
-          id="burger"
-          class="text-[#191919] space-y-2 divide-y-2 divide-[rgba(204,204,204,0.7)] bg-[rgba(253,253,253,0.7)] py-2 px-3"
+          class="space-y-2 divide-y-2 divide-[rgba(204,204,204,0.7)] bg-[rgba(253,253,253,0.7)] py-2 px-3 text-[#191919] md:inline-flex md:justify-around md:space-y-0 md:divide-y-0"
         >
-          <li><a href="##" class="">活動簡介</a></li>
-          <li><a href="##">主題人物</a></li>
-          <li><a href="##">致青春</a></li>
-          <li><a href="##">導演的話</a></li>
-          <li><a href="##">活動相冊</a></li>
-          <li><a href="##">活動專題</a></li>
-          <li><a href="##">活動心得</a></li>
-          <li><a href="##">合作團隊</a></li>
+          <li class="md:w-[14vw]"><a href="##" class="">活動簡介</a></li>
+          <li class="md:w-[14vw]"><a href="##">主題人物</a></li>
+          <li class="md:w-[14vw]"><a href="##">致青春</a></li>
+          <li class="md:w-[14vw]"><a href="##">導演的話</a></li>
+          <li class="md:w-[14vw]"><a href="##">活動相冊</a></li>
+          <li class="md:w-[14vw]"><a href="##">活動專題</a></li>
+          <li class="md:w-[14vw]"><a href="##">活動心得</a></li>
+          <li class="md:w-[14vw]"><a href="##">合作團隊</a></li>
         </ul>
       </div>
     </header>
