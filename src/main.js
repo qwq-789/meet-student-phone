@@ -6,4 +6,5 @@ var burger = document.getElementById("burger");
 burgerButton.addEventListener("click", function () {
   burger.classList.toggle("-translate-y-72");
   burger.classList.toggle("translate-y-10");
+  burger.classList.toggle("fixed");
 });
