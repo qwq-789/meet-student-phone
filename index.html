@@ -10,7 +10,7 @@
     <!-- header -->
     <header class="h-[40px] md:h-[52px]">
       <div
-        class="fixed z-[90] flex h-[40px] w-screen flex-row items-center bg-[#FDFDFD] md:invisible"
+        class="fixed z-[90] flex h-[40px] w-screen flex-row items-center bg-[#FDFDFD] md:hidden"
       >
         <div id="bb" class="z-[98] ml-4 w-1/12">
           <img src="./img/burger.png" />
@@ -24,16 +24,32 @@
         class="z-[80] w-screen -translate-y-72 text-center duration-500 md:translate-y-0"
       >
         <ul
-          class="space-y-2 divide-y-2 divide-[rgba(204,204,204,0.7)] bg-[rgba(253,253,253,0.7)] py-2 px-3 font-medium text-[#191919] md:inline-flex md:space-y-0 md:divide-y-0 md:bg-[#B5D6D6] md:px-0 md:pt-4 md:text-xl md:font-bold"
+          class="space-y-2 divide-y-2 divide-[rgba(204,204,204,0.7)] bg-[rgba(253,253,253,0.7)] py-2 px-3 font-medium text-[#191919] md:mx-auto md:inline-flex md:space-y-0 md:divide-y-0 md:bg-[#B5D6D6] md:px-0 md:pt-4 md:text-xl md:font-bold"
         >
-          <li class="md:w-[12vw]"><a href="#a">活動簡介</a></li>
-          <li class="md:w-[12vw]"><a href="#b">主題人物</a></li>
-          <li class="md:w-[12vw]"><a href="#c">致青春</a></li>
-          <li class="md:w-[12vw]"><a href="#d">導演的話</a></li>
-          <li class="md:w-[12vw]"><a href="#e">活動相冊</a></li>
-          <li class="md:w-[12vw]"><a href="#f">活動專題</a></li>
-          <li class="md:w-[12vw]"><a href="#g">活動心得</a></li>
-          <li class="md:w-[12vw]"><a href="#h">合作團隊</a></li>
+          <li class="hover:text-[#b4aa7c] md:w-[12vw]">
+            <a href="#a">活動簡介</a>
+          </li>
+          <li class="hover:text-[#b4aa7c] md:w-[12vw]">
+            <a href="#b">主題人物</a>
+          </li>
+          <li class="hover:text-[#b4aa7c] md:w-[12vw]">
+            <a href="#c">致青春</a>
+          </li>
+          <li class="hover:text-[#b4aa7c] md:w-[12vw]">
+            <a href="#d">導演的話</a>
+          </li>
+          <li class="hover:text-[#b4aa7c] md:w-[12vw]">
+            <a href="#e">活動相冊</a>
+          </li>
+          <li class="hover:text-[#b4aa7c] md:w-[12vw]">
+            <a href="#f">活動專題</a>
+          </li>
+          <li class="hover:text-[#b4aa7c] md:w-[12vw]">
+            <a href="#g">活動心得</a>
+          </li>
+          <li class="hover:text-[#b4aa7c] md:w-[12vw]">
+            <a href="#h">合作團隊</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -43,9 +59,9 @@
       class="relative h-[400px] w-screen bg-[#fdfdfd] p-6 md:mx-auto md:w-[70vw]"
     >
       <div
-        class="absolute right-6 z-[70] w-[50px] cursor-pointer md:w-[70px] md:translate-y-28 md:hover:w-[80px]"
+        class="absolute right-6 z-[70] w-[50px] cursor-pointer md:w-[70px] md:translate-y-28 md:hover:w-[80px] md:hover:translate-y-[107px] md:hover:translate-x-[5px]"
       >
-        <img id="letter" src="./img/letter.png" alt="" />
+        <img id="letter" src="./img/letter.png" alt="信件" />
       </div>
       <div class="w-full md:absolute md:bottom-10 md:right-8 md:w-1/2 md:pl-8">
         <p class="text-lg font-semibold md:text-xl">獻給同學們的一封信</p>
@@ -57,18 +73,20 @@
         </p>
       </div>
       <div class="h-2"></div>
-      <div
-        class="absolute hidden md:-bottom-14 md:left-[16vw] md:block md:w-[10.4vw]"
-      >
-        <img src="./img/left-top.png" alt="" />
-      </div>
       <div class="absolute right-3 w-1/3 max-w-[160px] md:left-7 md:w-[160px]">
         <img src="./img/pic5.png" alt="椅子" />
       </div>
-      <div
-        class="absolute left-3 w-1/2 max-w-[160px] md:bottom-[75px] md:left-[13.9vw] md:w-[160px]"
-      >
-        <img src="./img/pic6.png" alt="擁抱" />
+      <div class="relative z-50 translate-y-64 -translate-x-8 md:w-[160px]">
+        <div
+          class="absolute hidden md:top-3 md:-right-[13.9vw] md:block md:w-[10.4vw]"
+        >
+          <img src="./img/left-top.png" alt="" />
+        </div>
+        <div
+          class="absolute bottom-12 left-7 w-1/2 max-w-[160px] md:-bottom-3 md:left-[13.9vw] md:w-[160px]"
+        >
+          <img src="./img/pic6.png" alt="擁抱" />
+        </div>
       </div>
       <div
         class="absolute right-5 bottom-2 w-[35vw] max-w-[160px] md:-left-10 md:bottom-6 md:w-[160px]"
@@ -102,58 +120,234 @@
     <!-- 合作團隊 -->
     <div
       id="h"
-      class="mx-auto flex w-screen flex-col bg-[#222228] md:w-[80vw] md:flex-row"
+      class="relative mx-auto flex w-screen flex-col bg-[#222228] md:w-[80vw] md:flex-row"
     >
-      <div class="flex h-[400px] w-full flex-col bg-slate-500 pt-6 text-center">
-        <p class="mx-auto text-4xl font-semibold text-[#B4AA7C]">復興資傳</p>
+      <div
+        class="absolute hidden w-full cursor-default justify-evenly text-center font-semibold text-[#B4AA7C] md:flex md:flex-row md:pt-6 md:text-4xl"
+      >
+        <p>𐰓</p>
+        <p>𐰓</p>
+      </div>
+      <!-- 資傳 -->
+      <div class="flex h-[400px] w-full flex-col bg-[#222228] pt-6 text-center">
+        <p
+          class="mx-auto text-4xl font-semibold text-[#B4AA7C] md:text-[3.4vw]"
+        >
+          復興資傳
+        </p>
         <div class="h-4"></div>
-        <div class="mx-auto w-[300px]">
+        <div class="mx-auto block max-h-[250px] w-[300px] md:w-[24vw]">
           <img src="./img/club/fhic/group.png" alt="" />
         </div>
         <div class="h-5"></div>
         <a href="https://www.instagram.com/fhic_2nd/" target="_blank"
-          ><div class="mx-auto h-[30px] w-[200px] bg-[#B5D6D6] p-1">
+          ><div
+            class="mx-auto h-[30px] w-[200px] bg-[#B5D6D6] p-1 hover:text-[#b4aa7c] md:w-[20vw]"
+          >
             ＩＮＳＴＡＧＲＡＭ
           </div></a
         >
         <div class="h-6"></div>
-        <div id="arrow-1" class="mx-auto w-[50px] cursor-pointer">
+        <div
+          id="arrow-1"
+          class="mx-auto w-[50px] cursor-pointer duration-500 md:w-[5vw]"
+        >
           <img src="./img/arrow.png" alt="" />
         </div>
       </div>
-      <div class="flex h-[400px] w-full flex-col bg-slate-500 pt-6 text-center">
-        <p class="mx-auto text-4xl font-semibold text-[#B4AA7C]">復興山鬼</p>
+      <!-- 資傳名單 -->
+      <div
+        class="my-6 hidden bg-[#222228] text-center md:absolute md:w-[80vw] md:translate-y-[370px] md:py-20"
+        id="club-1"
+      >
+        <div class="flex flex-row justify-evenly">
+          <div class="w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhic/1.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">譚博宇</p>
+            <p class="text-[#fdfdfd]">攝影紀錄</p>
+          </div>
+          <div class="w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhic/2.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">白宜巧</p>
+            <p class="text-[#fdfdfd]">視覺設計<br />網站製作</p>
+          </div>
+          <div class="w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhic/3.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">曾少霆</p>
+            <p class="text-[#fdfdfd]">剪輯影片<br />攝影紀錄</p>
+          </div>
+        </div>
+        <div class="h-8"></div>
+        <div class="flex flex-col md:flex-row md:px-[4vw]">
+          <div class="flex flex-row justify-evenly">
+            <div class="w-[30vw] md:mr-[4vw] md:w-[15vw]">
+              <img src="./img/club/fhic/4.png" alt="" />
+              <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">林怡均</p>
+              <p class="text-[#fdfdfd]">網站製作</p>
+            </div>
+            <div class="w-[30vw] md:mr-[4vw] md:w-[15vw]">
+              <img src="./img/club/fhic/5.png" alt="" />
+              <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">張睿承</p>
+              <p class="text-[#fdfdfd]">網站製作</p>
+            </div>
+          </div>
+          <div class="h-8"></div>
+          <div class="flex flex-row justify-evenly">
+            <div class="w-[30vw] md:mr-[4vw] md:w-[15vw]">
+              <img src="./img/club/fhic/6.png" alt="" />
+              <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">陳宥仲</p>
+              <p class="text-[#fdfdfd]">攝影紀錄<br />網站製作</p>
+            </div>
+            <div class="w-[30vw] md:w-[15vw]">
+              <img src="./img/club/fhic/7.png" alt="" />
+              <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">連文寧</p>
+              <p class="text-[#fdfdfd]">攝影紀錄</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 山鬼 -->
+      <div class="flex h-[400px] w-full flex-col bg-[#222228] pt-6 text-center">
+        <p
+          class="mx-auto text-4xl font-semibold text-[#B4AA7C] md:text-[3.4vw]"
+        >
+          復興山鬼
+        </p>
         <div class="h-4"></div>
-        <div class="mx-auto w-[300px]">
+        <div class="mx-auto block max-h-[250px] w-[300px] md:w-[24vw]">
           <img src="./img/club/fhmg/group.png" alt="" />
         </div>
         <div class="h-5"></div>
         <a href="https://www.instagram.com/fhmg__/" target="_blank"
-          ><div class="mx-auto h-[30px] w-[200px] bg-[#B5D6D6] p-1">
+          ><div
+            class="mx-auto h-[30px] w-[200px] bg-[#B5D6D6] p-1 hover:text-[#b4aa7c] md:w-[20vw]"
+          >
             ＩＮＳＴＡＧＲＡＭ
           </div></a
         >
         <div class="h-6"></div>
-        <div id="arrow-2" class="mx-auto w-[50px] cursor-pointer">
+        <div
+          id="arrow-2"
+          class="mx-auto w-[50px] cursor-pointer duration-500 md:w-[5vw]"
+        >
           <img src="./img/arrow.png" alt="" />
         </div>
       </div>
+      <!-- 山鬼名單 -->
+      <div
+        class="my-6 hidden bg-[#222228] px-1 text-center md:absolute md:w-[80vw] md:translate-y-[370px] md:py-20 md:px-10"
+        id="club-2"
+      >
+        <div class="grid grid-cols-3 grid-rows-3 gap-y-8">
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/1.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">樓子榕</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/2.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">程靖雅</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/3.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">張子瑄</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/4.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">劉明勳</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/5.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">林家妤</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/6.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">朱恩永</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/7.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">王芷齡</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/8.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">李紫瑩</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+          <div class="mx-auto w-[30vw] md:w-[15vw]">
+            <img src="./img/club/fhmg/9.png" alt="" />
+            <p class="my-2 text-2xl font-semibold text-[#b4aa7c]">王靖淯</p>
+            <p class="text-[#fdfdfd]">演員</p>
+          </div>
+        </div>
+      </div>
       <!-- 人劇團 -->
-      <div class="flex h-[400px] w-full flex-col bg-slate-500 pt-6 text-center">
-        <p class="mx-auto text-4xl font-semibold text-[#B4AA7C]">人劇團</p>
+      <div class="flex h-[400px] w-full flex-col bg-[#222228] pt-6 text-center">
+        <p
+          class="mx-auto text-4xl font-semibold text-[#B4AA7C] md:text-[3.4vw]"
+        >
+          人劇團
+        </p>
         <div class="h-4"></div>
-        <div class="mx-auto w-[300px]">
+        <div class="mx-auto block max-h-[250px] w-[300px] md:w-[24vw]">
           <img src="./img/club/human/group.png" alt="" />
         </div>
         <div class="h-5"></div>
         <a href="http://humanity.family/" target="_blank"
-          ><div class="mx-auto h-[30px] w-[200px] bg-[#B5D6D6] p-1">
+          ><div
+            class="mx-auto h-[30px] w-[200px] bg-[#B5D6D6] p-1 hover:text-[#b4aa7c] md:w-[20vw]"
+          >
             ＷＥＢＳＩＴＥ
           </div></a
         >
         <div class="h-6"></div>
-        <div id="arrow-3" class="mx-auto w-[50px] cursor-pointer">
+        <div
+          id="arrow-3"
+          class="mx-auto w-[50px] cursor-pointer duration-500 md:w-[5vw]"
+        >
           <img src="./img/arrow.png" alt="" />
+        </div>
+      </div>
+      <!-- 人劇團名單 -->
+      <div
+        class="relative hidden h-[500px] bg-[#222228] md:absolute md:h-[1000px] md:w-[80vw] md:translate-y-[400px]"
+        id="club-3"
+      >
+        <div class="p-6 md:pt-20">
+          <img
+            src="./img/bg.png"
+            alt=""
+            class="absolute bottom-20 left-3 w-[60vw] max-w-[240px] md:w-2/3 md:max-w-full"
+          />
+          <img
+            src="./img/club/human/2.png"
+            alt=""
+            class="absolute bottom-24 w-[60vw] max-w-[240px] md:w-2/3 md:max-w-full"
+          />
+          <img
+            src="./img/club/human/1.png"
+            alt=""
+            class="absolute w-10/12 max-w-[333px] md:left-[10vw] md:w-9/12 md:max-w-full"
+          />
+          <div
+            class="absolute bottom-0 right-6 w-[20vw] max-w-[80px] bg-[#fdfdfd] p-1 font-semibold md:right-10 md:w-[10vw] md:max-w-full md:text-2xl"
+          >
+            <p class="">
+              王言換<br />
+              王薪語<br />
+              林于心<br />
+              邱承威<br />
+              徐翊傑<br />
+              張佳翔<br />
+              曾少彤<br />
+              黃渝棉<br /><br />
+            </p>
+          </div>
         </div>
       </div>
     </div>
